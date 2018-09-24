@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BB25AE6321595413009989D7 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB25AE6221595413009989D7 /* Item.swift */; };
+		BB599CFA215965C50057B2D1 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB599CF8215965C50057B2D1 /* DataModel.xcdatamodeld */; };
 		BB815D01215927BA000599A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB815D00215927BA000599A7 /* AppDelegate.swift */; };
-		BB815D03215927BA000599A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB815D02215927BA000599A7 /* ViewController.swift */; };
 		BB815D06215927BA000599A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB815D04215927BA000599A7 /* Main.storyboard */; };
 		BB815D08215927BC000599A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB815D07215927BC000599A7 /* Assets.xcassets */; };
 		BB815D0B215927BC000599A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB815D09215927BC000599A7 /* LaunchScreen.storyboard */; };
@@ -17,10 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BB25AE6221595413009989D7 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		BB599CF9215965C50057B2D1 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		BB815CFD215927BA000599A7 /* Kitchen Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kitchen Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB815D00215927BA000599A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BB815D02215927BA000599A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BB815D05215927BA000599A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB815D07215927BC000599A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB815D0A215927BC000599A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -39,6 +37,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB599CFB215965D80057B2D1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BB815D1221592883000599A7 /* TodoListController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BB599CFC215965F30057B2D1 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB599CF8215965C50057B2D1 /* DataModel.xcdatamodeld */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		BB599CFD2159661C0057B2D1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BB815D04215927BA000599A7 /* Main.storyboard */,
+				BB815D09215927BC000599A7 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		BB815CF4215927BA000599A7 = {
 			isa = PBXGroup;
 			children = (
@@ -59,12 +82,10 @@
 			isa = PBXGroup;
 			children = (
 				BB815D00215927BA000599A7 /* AppDelegate.swift */,
-				BB25AE6221595413009989D7 /* Item.swift */,
-				BB815D02215927BA000599A7 /* ViewController.swift */,
-				BB815D1221592883000599A7 /* TodoListController.swift */,
-				BB815D04215927BA000599A7 /* Main.storyboard */,
+				BB599CFB215965D80057B2D1 /* Controllers */,
+				BB599CFC215965F30057B2D1 /* Data Model */,
+				BB599CFD2159661C0057B2D1 /* Views */,
 				BB815D07215927BC000599A7 /* Assets.xcassets */,
-				BB815D09215927BC000599A7 /* LaunchScreen.storyboard */,
 				BB815D0C215927BC000599A7 /* Info.plist */,
 			);
 			path = "Kitchen Timer";
@@ -141,8 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB25AE6321595413009989D7 /* Item.swift in Sources */,
-				BB815D03215927BA000599A7 /* ViewController.swift in Sources */,
+				BB599CFA215965C50057B2D1 /* DataModel.xcdatamodeld in Sources */,
 				BB815D01215927BA000599A7 /* AppDelegate.swift in Sources */,
 				BB815D1321592883000599A7 /* TodoListController.swift in Sources */,
 			);
@@ -344,6 +364,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BB599CF8215965C50057B2D1 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BB599CF9215965C50057B2D1 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = BB599CF9215965C50057B2D1 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BB815CF5215927BA000599A7 /* Project object */;
 }
