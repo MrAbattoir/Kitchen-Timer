@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB25AE6321595413009989D7 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB25AE6221595413009989D7 /* Item.swift */; };
 		BB815D01215927BA000599A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB815D00215927BA000599A7 /* AppDelegate.swift */; };
 		BB815D03215927BA000599A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB815D02215927BA000599A7 /* ViewController.swift */; };
 		BB815D06215927BA000599A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB815D04215927BA000599A7 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB25AE6221595413009989D7 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		BB815CFD215927BA000599A7 /* Kitchen Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kitchen Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB815D00215927BA000599A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB815D02215927BA000599A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				BB815D00215927BA000599A7 /* AppDelegate.swift */,
+				BB25AE6221595413009989D7 /* Item.swift */,
 				BB815D02215927BA000599A7 /* ViewController.swift */,
 				BB815D1221592883000599A7 /* TodoListController.swift */,
 				BB815D04215927BA000599A7 /* Main.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB25AE6321595413009989D7 /* Item.swift in Sources */,
 				BB815D03215927BA000599A7 /* ViewController.swift in Sources */,
 				BB815D01215927BA000599A7 /* AppDelegate.swift in Sources */,
 				BB815D1321592883000599A7 /* TodoListController.swift in Sources */,
