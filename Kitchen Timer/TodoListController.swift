@@ -10,13 +10,36 @@ import UIKit
 
 class TodoListController: UITableViewController {
     
-    let itemArray = ["Mike","Kevin", "Ash"]
+    var itemArray = ["Mike","Kevin", "Ash"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
 
+    //MARK - Add new actions
+    @IBAction func addPressed(_ sender: UIBarButtonItem) {
+        var textField = UITextField()
+        
+        let alert = UIAlertController(title: "Add Meal", message: "", preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "Add Item", style: .default) { (action) in
+            // what will happen whe...
+            self.itemArray.append(textField.text!)
+            self.tableView.reloadData()
+        }
+        
+        alert.addTextField { (alertTextfield) in
+            alertTextfield.placeholder = "Add new meal"
+            textField = alertTextfield
+        }
+        
+        alert.addAction(action)
+        present(alert, animated:true,completion: nil)
+    }
+    
+    
+    
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
