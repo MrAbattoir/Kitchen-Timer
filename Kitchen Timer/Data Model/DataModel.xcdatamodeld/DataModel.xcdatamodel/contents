@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.14.2" systemVersion="18A389" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Catagory" representedClassName=".Catagory" syncable="YES" codeGenerationType="class"/>
+    <entity name="Catagory" representedClassName=".Catagory" syncable="YES" codeGenerationType="class">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Item" inverseName="parentCatagory" inverseEntity="Item" syncable="YES"/>
+    </entity>
     <entity name="Item" representedClassName=".Item" syncable="YES" codeGenerationType="class">
         <attribute name="done" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="title" attributeType="String" syncable="YES"/>
+        <relationship name="parentCatagory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Catagory" inverseName="items" inverseEntity="Catagory" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Item" positionX="-63" positionY="-18" width="128" height="75"/>
-        <element name="Catagory" positionX="-63" positionY="0" width="128" height="45"/>
+        <element name="Item" positionX="-249.8984375" positionY="-8.7421875" width="128" height="88"/>
+        <element name="Catagory" positionX="-624.234375" positionY="4.6328125" width="128" height="73"/>
     </elements>
 </model>

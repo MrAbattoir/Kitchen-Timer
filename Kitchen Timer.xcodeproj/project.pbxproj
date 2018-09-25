@@ -13,6 +13,7 @@
 		BB815D08215927BC000599A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB815D07215927BC000599A7 /* Assets.xcassets */; };
 		BB815D0B215927BC000599A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB815D09215927BC000599A7 /* LaunchScreen.storyboard */; };
 		BB815D1321592883000599A7 /* TodoListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB815D1221592883000599A7 /* TodoListController.swift */; };
+		BBFC141B215A2313001797F1 /* CatagoryListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFC141A215A2313001797F1 /* CatagoryListController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BB815D0A215927BC000599A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB815D0C215927BC000599A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB815D1221592883000599A7 /* TodoListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListController.swift; sourceTree = "<group>"; };
+		BBFC141A215A2313001797F1 /* CatagoryListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatagoryListController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		BB599CFB215965D80057B2D1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BBFC141A215A2313001797F1 /* CatagoryListController.swift */,
 				BB815D1221592883000599A7 /* TodoListController.swift */,
 			);
 			path = Controllers;
@@ -163,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB599CFA215965C50057B2D1 /* DataModel.xcdatamodeld in Sources */,
+				BBFC141B215A2313001797F1 /* CatagoryListController.swift in Sources */,
 				BB815D01215927BA000599A7 /* AppDelegate.swift in Sources */,
 				BB815D1321592883000599A7 /* TodoListController.swift in Sources */,
 			);
