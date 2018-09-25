@@ -17,8 +17,8 @@ class CatagoryListController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       loadCatagorys()
+        tableView.rowHeight = 100.0
+        loadCatagorys()
         
     }
 
@@ -29,7 +29,7 @@ class CatagoryListController: UITableViewController {
         
         let alert = UIAlertController(title: "Add Meal", message: "", preferredStyle: .alert)
         
-        let action = UIAlertAction(title: "Add Item", style: .default) { (action) in
+        let action = UIAlertAction(title: "Add", style: .default) { (action) in
             // what will happen whe...
             
             
@@ -42,7 +42,7 @@ class CatagoryListController: UITableViewController {
         }
         
         alert.addTextField { (alertTextfield) in
-            alertTextfield.placeholder = "Add meal"
+            alertTextfield.placeholder = "Meal Description"
             alertTextfield.autocapitalizationType = .words
             textField = alertTextfield
         }

@@ -6,11 +6,12 @@
     </entity>
     <entity name="Item" representedClassName=".Item" syncable="YES" codeGenerationType="class">
         <attribute name="done" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="timeCook" attributeType="String" syncable="YES"/>
         <attribute name="title" attributeType="String" syncable="YES"/>
         <relationship name="parentCatagory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Catagory" inverseName="items" inverseEntity="Catagory" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Item" positionX="-249.8984375" positionY="-8.7421875" width="128" height="88"/>
         <element name="Catagory" positionX="-624.234375" positionY="4.6328125" width="128" height="73"/>
+        <element name="Item" positionX="-249.8984375" positionY="-8.7421875" width="128" height="103"/>
     </elements>
 </model>

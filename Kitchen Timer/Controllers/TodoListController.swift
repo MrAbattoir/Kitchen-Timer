@@ -14,6 +14,7 @@ class TodoListController: UITableViewController {
     var itemArray = [Item]()
     var selectedCatagory : Catagory? {
         didSet{
+            navigationItem.title = selectedCatagory?.name
             loadItems()
         }
     }
@@ -23,24 +24,30 @@ class TodoListController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.rowHeight = 100.0
         
     }
     
+    @IBAction func backPressed(_ sender: UIBarButtonItem) {
+        navigationController?.popViewController(animated: true)
+        
+    }
     
     //MARK - Add new actions
     @IBAction func addPressed(_ sender: UIBarButtonItem) {
         var textField = UITextField()
         var textField2 = UITextField()
         
-        let alert = UIAlertController(title: "Add Meal", message: "", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Add Item", message: "", preferredStyle: .alert)
         
-        let action = UIAlertAction(title: "Add Item", style: .default) { (action) in
+        let action = UIAlertAction(title: "Add", style: .default) { (action) in
             // what will happen whe...
             
             
             
             let newItem = Item(context: self.context)
             newItem.title = textField.text!
+            newItem.timeCook = textField2.text!
             newItem.done = false
             newItem.parentCatagory = self.selectedCatagory
             self.itemArray.append(newItem)
@@ -49,14 +56,15 @@ class TodoListController: UITableViewController {
         }
         
         alert.addTextField { (alertTextfield) in
-            alertTextfield.placeholder = "Add new meal"
+            alertTextfield.placeholder = "Add Item"
             alertTextfield.autocapitalizationType = .words
             textField = alertTextfield
         }
         
         alert.addTextField { (alertTextfield2) in
-            alertTextfield2.placeholder = "Add time"
+            alertTextfield2.placeholder = "Add Cook Time"
             alertTextfield2.autocapitalizationType = .words
+            alertTextfield2.keyboardType = .numberPad
             textField2 = alertTextfield2
         }
         
@@ -81,6 +89,8 @@ class TodoListController: UITableViewController {
         let item = itemArray[indexPath.row]
         
         cell.textLabel?.text = item.title
+        cell.detailTextLabel?.text = item.timeCook
+       
         
         //ternary operation
         cell.accessoryType = item.done ? .checkmark : .none
@@ -99,6 +109,26 @@ class TodoListController: UITableViewController {
         saveItems()
         
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    // Override to support conditional editing of the table view.
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        // Return false if you do not want the specified item to be editable.
+        return true
+    }
+    
+    
+    
+    // Override to support editing the table view.
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            // Delete the row from the data source
+            // tableView.deleteRows(at: [indexPath], with: .fade)
+            
+            context.delete(itemArray[indexPath.row])
+            itemArray.remove(at: indexPath.row)
+            tableView.reloadData()
+        }
     }
     
    
@@ -150,7 +180,7 @@ extension TodoListController: UISearchBarDelegate {
         
         let predicate = NSPredicate(format: "title CONTAINS[cd] %@", searchBar.text!)
         
-        request.sortDescriptors = [NSSortDescriptor(key: "title", ascending: true)]
+        request.sortDescriptors = [NSSortDescriptor(key: "title", ascending: false)]
         
         loadItems(with: request, predicate: predicate)
     
