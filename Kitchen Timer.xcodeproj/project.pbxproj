@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BB599CFA215965C50057B2D1 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB599CF8215965C50057B2D1 /* DataModel.xcdatamodeld */; };
+		BB776076215A95EB00EB2203 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB776075215A95EB00EB2203 /* Item.swift */; };
+		BB776078215A961D00EB2203 /* Catagory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB776077215A961D00EB2203 /* Catagory.swift */; };
 		BB815D01215927BA000599A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB815D00215927BA000599A7 /* AppDelegate.swift */; };
 		BB815D06215927BA000599A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB815D04215927BA000599A7 /* Main.storyboard */; };
 		BB815D08215927BC000599A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB815D07215927BC000599A7 /* Assets.xcassets */; };
 		BB815D0B215927BC000599A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB815D09215927BC000599A7 /* LaunchScreen.storyboard */; };
 		BB815D1321592883000599A7 /* TodoListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB815D1221592883000599A7 /* TodoListController.swift */; };
 		BBFC141B215A2313001797F1 /* CatagoryListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFC141A215A2313001797F1 /* CatagoryListController.swift */; };
+		CD3D140C442611D112A145A5 /* Pods_Kitchen_Timer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D1FAAD6F8F0099D446FEC0 /* Pods_Kitchen_Timer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BB599CF9215965C50057B2D1 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		5AC003E9489F037B0ABD8404 /* Pods-Kitchen Timer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen Timer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen Timer/Pods-Kitchen Timer.release.xcconfig"; sourceTree = "<group>"; };
+		BB776075215A95EB00EB2203 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		BB776077215A961D00EB2203 /* Catagory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Catagory.swift; sourceTree = "<group>"; };
 		BB815CFD215927BA000599A7 /* Kitchen Timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kitchen Timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB815D00215927BA000599A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB815D05215927BA000599A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -26,6 +30,8 @@
 		BB815D0C215927BC000599A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB815D1221592883000599A7 /* TodoListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListController.swift; sourceTree = "<group>"; };
 		BBFC141A215A2313001797F1 /* CatagoryListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatagoryListController.swift; sourceTree = "<group>"; };
+		D95187B22396422BB0847C89 /* Pods-Kitchen Timer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen Timer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen Timer/Pods-Kitchen Timer.debug.xcconfig"; sourceTree = "<group>"; };
+		F5D1FAAD6F8F0099D446FEC0 /* Pods_Kitchen_Timer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kitchen_Timer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,12 +39,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD3D140C442611D112A145A5 /* Pods_Kitchen_Timer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		97F96C8817A6AFA12486BE69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5D1FAAD6F8F0099D446FEC0 /* Pods_Kitchen_Timer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BB599CFB215965D80057B2D1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -51,7 +66,8 @@
 		BB599CFC215965F30057B2D1 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				BB599CF8215965C50057B2D1 /* DataModel.xcdatamodeld */,
+				BB776077215A961D00EB2203 /* Catagory.swift */,
+				BB776075215A95EB00EB2203 /* Item.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -70,6 +86,8 @@
 			children = (
 				BB815CFF215927BA000599A7 /* Kitchen Timer */,
 				BB815CFE215927BA000599A7 /* Products */,
+				D6077371F43F63DF345F3863 /* Pods */,
+				97F96C8817A6AFA12486BE69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +112,15 @@
 			path = "Kitchen Timer";
 			sourceTree = "<group>";
 		};
+		D6077371F43F63DF345F3863 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D95187B22396422BB0847C89 /* Pods-Kitchen Timer.debug.xcconfig */,
+				5AC003E9489F037B0ABD8404 /* Pods-Kitchen Timer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -101,9 +128,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB815D0F215927BC000599A7 /* Build configuration list for PBXNativeTarget "Kitchen Timer" */;
 			buildPhases = (
+				583400627F27286B7D39E2DF /* [CP] Check Pods Manifest.lock */,
 				BB815CF9215927BA000599A7 /* Sources */,
 				BB815CFA215927BA000599A7 /* Frameworks */,
 				BB815CFB215927BA000599A7 /* Resources */,
+				6820CD7189B737B487626D90 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,13 +189,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		583400627F27286B7D39E2DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kitchen Timer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6820CD7189B737B487626D90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Kitchen Timer/Pods-Kitchen Timer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kitchen Timer/Pods-Kitchen Timer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BB815CF9215927BA000599A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB599CFA215965C50057B2D1 /* DataModel.xcdatamodeld in Sources */,
+				BB776076215A95EB00EB2203 /* Item.swift in Sources */,
 				BBFC141B215A2313001797F1 /* CatagoryListController.swift in Sources */,
+				BB776078215A961D00EB2203 /* Catagory.swift in Sources */,
 				BB815D01215927BA000599A7 /* AppDelegate.swift in Sources */,
 				BB815D1321592883000599A7 /* TodoListController.swift in Sources */,
 			);
@@ -312,6 +391,7 @@
 		};
 		BB815D10215927BC000599A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D95187B22396422BB0847C89 /* Pods-Kitchen Timer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -331,6 +411,7 @@
 		};
 		BB815D11215927BC000599A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AC003E9489F037B0ABD8404 /* Pods-Kitchen Timer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -370,19 +451,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		BB599CF8215965C50057B2D1 /* DataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				BB599CF9215965C50057B2D1 /* DataModel.xcdatamodel */,
-			);
-			currentVersion = BB599CF9215965C50057B2D1 /* DataModel.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = BB815CF5215927BA000599A7 /* Project object */;
 }
