@@ -28,6 +28,7 @@ class TodoListController: UITableViewController {
     //MARK - Add new actions
     @IBAction func addPressed(_ sender: UIBarButtonItem) {
         var textField = UITextField()
+        var textField2 = UITextField()
         
         let alert = UIAlertController(title: "Add Meal", message: "", preferredStyle: .alert)
         
@@ -44,8 +45,15 @@ class TodoListController: UITableViewController {
             self.saveItems()
         }
         
+        alert.addTextField { (alertTextfield2) in
+            alertTextfield2.placeholder = "Add time"
+            alertTextfield2.autocapitalizationType = .words
+            textField2 = alertTextfield2
+        }
+        
         alert.addTextField { (alertTextfield) in
             alertTextfield.placeholder = "Add new meal"
+            alertTextfield.autocapitalizationType = .words
             textField = alertTextfield
         }
         
